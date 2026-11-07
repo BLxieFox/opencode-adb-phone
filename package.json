@@ -1,0 +1,39 @@
+{
+  "name": "opencode-adb-phone",
+  "version": "0.1.0",
+  "description": "OpenCode plugin that lets the agent see and control a USB-connected Android phone over adb.",
+  "type": "module",
+  "license": "MIT",
+  "author": "BLxieFox",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "adb",
+    "android",
+    "automation",
+    "agent",
+    "uiautomator"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/smoke.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BLxieFox/opencode-adb-phone.git"
+  },
+  "homepage": "https://github.com/BLxieFox/opencode-adb-phone#readme",
+  "bugs": {
+    "url": "https://github.com/BLxieFox/opencode-adb-phone/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
