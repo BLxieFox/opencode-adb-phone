@@ -54,12 +54,6 @@ git clone https://github.com/BLxieFox/opencode-adb-phone.git \
 
 Windows 上对应路径是 `%USERPROFILE%\.config\opencode\plugins\adb-phone`。
 
-**从 npm 安装**（发布之后）：
-
-```bash
-opencode plugin add opencode-adb-phone
-```
-
 然后确认已加载：
 
 ```bash

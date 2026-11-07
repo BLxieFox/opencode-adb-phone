@@ -69,12 +69,6 @@ git clone https://github.com/BLxieFox/opencode-adb-phone.git \
 
 On Windows that is `%USERPROFILE%\.config\opencode\plugins\adb-phone`.
 
-**From npm** (after publishing):
-
-```bash
-opencode plugin add opencode-adb-phone
-```
-
 Then verify it loaded:
 
 ```bash
