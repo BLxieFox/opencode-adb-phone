@@ -3,16 +3,33 @@
 **English** | [简体中文](README.zh-CN.md)
 
 An [OpenCode](https://opencode.ai) v2 plugin that lets the agent **see and control a USB-connected
-Android phone through `adb`** — the mobile counterpart of a desktop accessibility controller.
+Android phone over `adb`** — labelled UI snapshots, screenshots, tap/swipe/type, app launch and
+file transfer.
 
-The agent gets a labelled UI tree, screenshots it can actually look at, and tools to tap, swipe,
-type, launch apps and inspect the device. No emulator, no app under test, no rooted phone.
+The agent reads the screen as a numbered tree of interactive elements and acts on element labels
+instead of guessing pixel coordinates. No emulator, no root, no test hooks in the app: if a person
+can operate the screen, the agent can too.
 
 ```
 phone_snapshot                 →  [7] Button "WLAN" (221,1110)-(361,1174)
 phone_tap label=7              →  taps the element, not a guessed coordinate
 phone_snapshot                 →  verify what changed
 ```
+
+## What you can do with it
+
+- **Hands-off device chores** — "turn off Bluetooth", "connect to the office Wi-Fi", "set a
+  10-minute alarm", "put the phone on silent".
+- **Inspect a phone you cannot pick up** — foreground app, battery, connectivity and current
+  settings, answered straight from the session.
+- **Walk through an app** — open a package, navigate by element, type into fields, read back the
+  result. Handy for reproducing a bug somebody described in chat.
+- **Prepare a device for someone else** — install an APK, drop a file into `Download/`, pre-set a
+  few options, then hand the phone over.
+- **Smoke-test your own app on real hardware** — a cheap sanity check alongside instrumentation
+  tests, never a replacement for them.
+- **Driven workflows** — automate a repetitive sequence of taps you would otherwise perform by hand
+  while staring at the screen.
 
 ## Why not just run `adb` from the shell?
 

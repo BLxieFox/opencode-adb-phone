@@ -1,7 +1,7 @@
 {
   "name": "opencode-adb-phone",
   "version": "0.1.0",
-  "description": "OpenCode plugin that lets the agent see and control a USB-connected Android phone over adb.",
+  "description": "OpenCode v2 plugin that lets the agent see and control a USB-connected Android phone over adb: labelled UI snapshots, screenshots, tap/swipe/type, app launch and file transfer.",
   "type": "module",
   "license": "MIT",
   "author": "BLxieFox",
