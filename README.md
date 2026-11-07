@@ -1,5 +1,7 @@
 # opencode-adb-phone
 
+**English** | [简体中文](README.zh-CN.md)
+
 An [OpenCode](https://opencode.ai) v2 plugin that lets the agent **see and control a USB-connected
 Android phone through `adb`** — the mobile counterpart of a desktop accessibility controller.
 
